@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../../../node_modules/primeng/resources/themes/luna-blue/theme.css";
+body {
+    background-color: var(--surface-a);
+    color: var(--text-color);
+}

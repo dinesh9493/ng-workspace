@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "3e306d00-ba7a-4d40-8145-977c59928b07"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -28,6 +31,9 @@
               "projects/router-samples/src/assets"
             ],
             "styles": [
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/arya-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "projects/router-samples/src/styles.scss"
             ],
             "scripts": []
@@ -132,7 +138,7 @@
       },
       "root": "projects/form-samples",
       "sourceRoot": "projects/form-samples/src",
-      "prefix": "app",
+      "prefix": "fs",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -148,6 +154,17 @@
               "projects/form-samples/src/assets"
             ],
             "styles": [
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/luna-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "./node_modules/primeflex/src/_variables.scss",
+              "./node_modules/primeflex/src/_grid.scss",
+              "./node_modules/primeflex/src/_formlayout.scss",
+              "./node_modules/primeflex/src/_display.scss",
+              "./node_modules/primeflex/src/_text.scss",
+              "./node_modules/primeflex/src/flexbox/_flexbox.scss",
+              "./node_modules/primeflex/src/_spacing.scss",
+              "./node_modules/primeflex/src/_elevation.scss",
               "projects/form-samples/src/styles.scss"
             ],
             "scripts": []
@@ -244,5 +261,5 @@
       }
     }
   },
-  "defaultProject": "router-samples"
+  "defaultProject": "form-samples"
 }
